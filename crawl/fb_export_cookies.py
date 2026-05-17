@@ -1,11 +1,11 @@
-ï»¿import time
+import time
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 STATE_FILE = Path("crawl/.cookies/fb_state.json")
 STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
 
-print("Mo trinh duyet â€” DANG NHAP Facebook â€” quay lai nhan ENTER")
+print("Mo trinh duyet — DANG NHAP Facebook — quay lai nhan ENTER")
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False, args=["--disable-blink-features=AutomationControlled"])

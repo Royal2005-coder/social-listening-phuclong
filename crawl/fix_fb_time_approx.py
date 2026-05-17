@@ -1,4 +1,4 @@
-﻿import psycopg2, random
+import psycopg2, random
 from datetime import timedelta
 
 DB = dict(host='localhost', port=5434, dbname='social_listening', user='sl_admin', password='SocialListening@2026!')

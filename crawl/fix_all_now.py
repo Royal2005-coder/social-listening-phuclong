@@ -1,4 +1,4 @@
-﻿import psycopg2, json, re
+import psycopg2, json, re
 
 DB = dict(host='localhost', port=5434, dbname='social_listening', user='sl_admin', password='SocialListening@2026!')
 BRAND_PAGES = {'phuc_long': 'PhuclongCoffeeandTea', 'highlands': 'highlandscoffeevietnam', 'katinat': 'katinat.vn'}

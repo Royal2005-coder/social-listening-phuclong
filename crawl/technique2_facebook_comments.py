@@ -21,7 +21,7 @@ from playwright.sync_api import sync_playwright
 import psycopg2
 
 DB = dict(host='localhost', port=5434, dbname='social_listening',
-          user='sl_admin', password='YOUR_DB_PASSWORD')
+          user='sl_admin', password='SocialListening@2026!')
 
 STATE_FILE = Path("crawl/.cookies/fb_state.json")
 BRANDS = ["phuc_long", "highlands", "katinat"]

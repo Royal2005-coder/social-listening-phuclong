@@ -22,7 +22,7 @@ from datetime import datetime
 import psycopg2
 
 DB = dict(host='localhost', port=5434, dbname='social_listening',
-          user='sl_admin', password='YOUR_DB_PASSWORD')
+          user='sl_admin', password='SocialListening@2026!')
 
 BRANDS = {
     "phuc_long":  "https://www.tiktok.com/@phuclongofficial",
