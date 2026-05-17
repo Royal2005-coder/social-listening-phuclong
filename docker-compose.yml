@@ -1,0 +1,110 @@
+﻿name: social-listening
+
+services:
+  sl-postgres:
+    image: postgres:16-alpine
+    container_name: sl-postgres
+    restart: unless-stopped
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_USER: sl_admin
+      POSTGRES_PASSWORD: SocialListening@2026!
+      POSTGRES_DB: social_listening
+    volumes:
+      - sl-pgdata:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sl_admin -d social_listening"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+    networks:
+      - sl-network
+
+  sl-metabase-pg:
+    image: postgres:16-alpine
+    container_name: sl-metabase-pg
+    restart: unless-stopped
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_USER: metabase
+      POSTGRES_PASSWORD: MetabaseSL@2026!
+      POSTGRES_DB: metabase
+    volumes:
+      - sl-metabase-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U metabase -d metabase"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+    networks:
+      - sl-network
+
+  sl-metabase:
+    image: metabase/metabase:v0.54.3
+    container_name: sl-metabase
+    restart: unless-stopped
+    ports:
+      - "3003:3000"
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: metabase
+      MB_DB_PORT: 5432
+      MB_DB_USER: metabase
+      MB_DB_PASS: MetabaseSL@2026!
+      MB_DB_HOST: sl-metabase-pg
+      JAVA_OPTS: "-Xmx768m"
+    depends_on:
+      sl-metabase-pg:
+        condition: service_healthy
+      sl-postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 90s
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+    networks:
+      - sl-network
+
+
+  cf-tunnel-sl:
+    image: cloudflare/cloudflared:latest
+    container_name: cf-tunnel-sl
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      TUNNEL_TOKEN: "PASTE_TOKEN_HERE"
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+    networks:
+      - sl-network
+
+volumes:
+  sl-pgdata:
+    name: sl-pgdata
+  sl-metabase-pgdata:
+    name: sl-metabase-pgdata
+
+networks:
+  sl-network:
+    name: sl-network
+    driver: bridge
+

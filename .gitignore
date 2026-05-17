@@ -1,0 +1,11 @@
+﻿__pycache__/
+*.pyc
+crawl/.cookies/
+crawl/TikTokDownloader/
+data/fb_debug*
+pgdata/
+metabase-data/
+.env
+.DS_Store
+Thumbs.db
+check_csv.py

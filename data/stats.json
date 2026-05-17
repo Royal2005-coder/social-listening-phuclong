@@ -1,0 +1,333 @@
+{
+  "data_counts": {
+    "tiktok": 300,
+    "facebook": 300,
+    "tiktok_comments": 2689,
+    "facebook_comments": 2056,
+    "total": 5345,
+    "total_comments": 4745
+  },
+  "missing": {
+    "tiktok": {
+      "hashtags": 27
+    },
+    "facebook": {
+      "post_text": 4,
+      "reactions_breakdown": 300,
+      "hashtags": 300
+    },
+    "tiktok_comments": {},
+    "facebook_comments": {}
+  },
+  "duplicates": {
+    "tiktok": 0,
+    "facebook": 0,
+    "tk_comments": 6,
+    "fb_comments": 0
+  },
+  "outliers": {
+    "tk_count": 87,
+    "tk_pct": 29.0,
+    "fb_count": 58,
+    "fb_pct": 19.3
+  },
+  "content_type": {
+    "Lifestyle": 166,
+    "Product": 80,
+    "Promotion": 44,
+    "UGC": 9,
+    "Collaboration": 1
+  },
+  "time_category": {
+    "Sang (6-12h)": 108,
+    "Toi (18-23h)": 95,
+    "Chieu (12-18h)": 95,
+    "Khuya (23-6h)": 2
+  },
+  "time_range": {
+    "phuc_long": {
+      "tk_min": "2025-12-24",
+      "tk_max": "2026-05-12",
+      "tk_span": 139,
+      "fb_min": "2026-02-27",
+      "fb_max": "2026-05-12",
+      "fb_span": 73
+    },
+    "highlands": {
+      "tk_min": "2024-12-21",
+      "tk_max": "2026-05-11",
+      "tk_span": 506,
+      "fb_min": "2026-03-06",
+      "fb_max": "2026-05-12",
+      "fb_span": 66
+    },
+    "katinat": {
+      "tk_min": "2025-08-02",
+      "tk_max": "2026-05-12",
+      "tk_span": 282,
+      "fb_min": "2026-03-28",
+      "fb_max": "2026-05-12",
+      "fb_span": 44
+    }
+  },
+  "phuc_long": {
+    "views_count_mean": 127310.03,
+    "views_count_median": 2647.0,
+    "views_count_std": 336666.710962267,
+    "likes_count_mean": 796.34,
+    "likes_count_median": 28.0,
+    "likes_count_std": 1879.4844673554242,
+    "comments_count_mean": 17.31,
+    "comments_count_median": 1.0,
+    "comments_count_std": 49.172073662627135,
+    "shares_count_mean": 50.78,
+    "shares_count_median": 5.0,
+    "shares_count_std": 149.52832102273734,
+    "engagement_rate_mean": 2.4836197573905263,
+    "engagement_rate_median": 1.3384962822506763,
+    "engagement_rate_std": 4.2092289143598105,
+    "collect_count_mean": 29.28,
+    "collect_count_median": 2.0,
+    "collect_count_std": 80.04532554380762,
+    "count": 100,
+    "corr_views_er": -0.16376133769443285,
+    "comment_rate_mean": 0.06425263283574592,
+    "share_rate_mean": 0.20525737416835665,
+    "golden_hours": [
+      7,
+      8,
+      14
+    ],
+    "golden_hours_er": {
+      "7": 10.973296199213632,
+      "8": 6.987566376903456,
+      "14": 5.983866192221478
+    },
+    "top_posting_hours": [
+      10,
+      18,
+      20
+    ],
+    "hashtag_count_mean": 3.2,
+    "caption_length_mean": 466.09,
+    "caption_length_median": 414.0
+  },
+  "highlands": {
+    "views_count_mean": 4929318.12,
+    "views_count_median": 23700.0,
+    "views_count_std": 10590904.311495846,
+    "likes_count_mean": 2597.52,
+    "likes_count_median": 140.5,
+    "likes_count_std": 5492.462829085772,
+    "comments_count_mean": 48.63,
+    "comments_count_median": 14.0,
+    "comments_count_std": 91.95098112197026,
+    "shares_count_mean": 337.0,
+    "shares_count_median": 40.5,
+    "shares_count_std": 743.8591427430493,
+    "engagement_rate_mean": 0.6990251061234605,
+    "engagement_rate_median": 0.6060513330528249,
+    "engagement_rate_std": 0.6899513433006034,
+    "collect_count_mean": 176.16,
+    "collect_count_median": 15.0,
+    "collect_count_std": 380.7345829134289,
+    "count": 100,
+    "corr_views_er": -0.4350764035941008,
+    "comment_rate_mean": 0.04702499078392339,
+    "share_rate_mean": 0.1347876194330095,
+    "golden_hours": [
+      9,
+      23,
+      22
+    ],
+    "golden_hours_er": {
+      "9": 1.614359017941956,
+      "23": 1.6025641025641024,
+      "22": 1.2151424753736677
+    },
+    "top_posting_hours": [
+      20,
+      11,
+      19
+    ],
+    "hashtag_count_mean": 2.75,
+    "caption_length_mean": 277.55,
+    "caption_length_median": 212.0
+  },
+  "katinat": {
+    "views_count_mean": 206618.31,
+    "views_count_median": 121350.0,
+    "views_count_std": 345599.7034740151,
+    "likes_count_mean": 1361.33,
+    "likes_count_median": 275.0,
+    "likes_count_std": 4281.407667727138,
+    "comments_count_mean": 19.67,
+    "comments_count_median": 6.0,
+    "comments_count_std": 54.24058918514359,
+    "shares_count_mean": 215.9,
+    "shares_count_median": 45.0,
+    "shares_count_std": 745.9737788876221,
+    "engagement_rate_mean": 1.031716850152588,
+    "engagement_rate_median": 0.7209964474841334,
+    "engagement_rate_std": 1.0925652573876226,
+    "collect_count_mean": 116.63,
+    "collect_count_median": 32.0,
+    "collect_count_std": 494.44252160561314,
+    "count": 100,
+    "corr_views_er": -0.1430699364861184,
+    "comment_rate_mean": 0.02932196331462432,
+    "share_rate_mean": 0.1769942500189818,
+    "golden_hours": [
+      23,
+      13,
+      9
+    ],
+    "golden_hours_er": {
+      "23": 3.3121666666666667,
+      "13": 1.7606403166094038,
+      "9": 1.558596776278289
+    },
+    "top_posting_hours": [
+      10,
+      9,
+      11
+    ],
+    "hashtag_count_mean": 3.62,
+    "caption_length_mean": 139.68,
+    "caption_length_median": 133.0
+  },
+  "pl_hashtags": {
+    "phúclong": 90,
+    "ủvịtâmgiao": 35,
+    "hươngmậtươmsắc": 17,
+    "chạmvịtếtvui": 17,
+    "tết2026": 15
+  },
+  "pl_unique_hashtags": 60,
+  "hl_hashtags": {
+    "highlandscoffee": 73,
+    "phindixoaidua": 11,
+    "highlands": 10,
+    "giongiachuyentrang": 7,
+    "duxuanhighlands": 7
+  },
+  "kt_hashtags": {
+    "katinat": 99,
+    "katies": 82,
+    "fyp": 37,
+    "lyphepmau": 15,
+    "30thang4": 6
+  },
+  "pl_viral_paradox": {
+    "high_views_low_er": 27,
+    "low_views_high_er": 27,
+    "hvle_pct": 27.0,
+    "lvhe_pct": 27.0
+  },
+  "hl_viral_paradox": {
+    "high_views_low_er": 43,
+    "low_views_high_er": 43,
+    "hvle_pct": 43.0,
+    "lvhe_pct": 43.0
+  },
+  "kt_viral_paradox": {
+    "high_views_low_er": 35,
+    "low_views_high_er": 35,
+    "hvle_pct": 35.0,
+    "lvhe_pct": 35.0
+  },
+  "kmeans": {
+    "optimal_k": 2,
+    "best_silhouette": 0.7737,
+    "silhouettes": [
+      0.7737,
+      0.457,
+      0.3438,
+      0.359,
+      0.3589,
+      0.3002
+    ]
+  },
+  "ols": {
+    "r2": 0.0617,
+    "adj_r2": 0.0489,
+    "f_stat": 4.8457,
+    "f_pvalue": 0.0008465584774153257,
+    "high_vif_removed": {
+      "has_music": 330.65,
+      "content_type_Lifestyle": 76.93,
+      "content_type_Product": 61.62,
+      "content_type_Promotion": 40.2,
+      "content_type_UGC": 10.12
+    },
+    "significant_vars": [
+      {
+        "name": "posting_hour",
+        "coef": -0.12787309045978046,
+        "pvalue": 0.0003639437339232164
+      },
+      {
+        "name": "caption_length",
+        "coef": 0.0012206479428457497,
+        "pvalue": 0.031041502873938847
+      }
+    ]
+  },
+  "rf": {
+    "mae": 1.1117,
+    "rmse": 2.5308,
+    "r2": 0.3739,
+    "cv_mean": -2.8284,
+    "cv_std": 2.9963,
+    "best_params": {
+      "max_depth": 5,
+      "min_samples_leaf": 3,
+      "min_samples_split": 5,
+      "n_estimators": 200
+    },
+    "top5_features": {
+      "caption_length": 37.7,
+      "collect_count": 25.9,
+      "posting_hour": 19.3,
+      "hashtag_count": 17.1
+    }
+  },
+  "facebook": {
+    "phuc_long": {
+      "likes_mean": 1047.95,
+      "comments_mean": 77.91,
+      "shares_mean": 44.68,
+      "total_eng_mean": 1170.54,
+      "count": 100
+    },
+    "highlands": {
+      "likes_mean": 624.54,
+      "comments_mean": 121.16,
+      "shares_mean": 31.44,
+      "total_eng_mean": 777.14,
+      "count": 100
+    },
+    "katinat": {
+      "likes_mean": 877.76,
+      "comments_mean": 71.37,
+      "shares_mean": 27.59,
+      "total_eng_mean": 976.72,
+      "count": 100
+    }
+  },
+  "cross_platform": {
+    "fb_likes_ratio": 1.3
+  },
+  "comments": {
+    "total_valid": 4334,
+    "by_brand": {
+      "highlands": 1658,
+      "phuc_long": 1469,
+      "katinat": 1207
+    },
+    "by_platform": {
+      "tiktok": 2327,
+      "facebook": 2007
+    }
+  }
+}
